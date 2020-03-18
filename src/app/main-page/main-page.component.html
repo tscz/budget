@@ -1,8 +1,23 @@
-<nb-card>
-  <nb-card-header>Nebula</nb-card-header>
-  <nb-card-body>
-    <ag-grid-angular style="width: 100%; height: 400px;" class="ag-theme-alpine" [rowData]="rowData"
-      [columnDefs]="columnDefs">
-    </ag-grid-angular>
-  </nb-card-body>
-</nb-card>
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <nb-card-header>Table</nb-card-header>
+      <nb-card-body>
+        <ag-grid-angular style="width: 100%; height: 400px;" class="ag-theme-alpine" [rowData]="rowData"
+          [columnDefs]="columnDefs">
+        </ag-grid-angular>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+  <nb-layout-column>
+    <nb-card>
+      <nb-card-header>Diagram</nb-card-header>
+      <nb-card-body>
+        <div class="chart-wrapper">
+          <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
+          </canvas>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

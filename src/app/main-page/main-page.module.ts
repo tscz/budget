@@ -10,6 +10,7 @@ import {
 } from "@nebular/theme";
 import { MainPageComponent } from "./main-page.component";
 import { AgGridModule } from "ag-grid-angular";
+import { ChartsModule } from "ng2-charts";
 
 @NgModule({
   declarations: [MainPageComponent],
@@ -20,7 +21,8 @@ import { AgGridModule } from "ag-grid-angular";
     NbButtonModule,
     NbIconModule,
     NbCardModule,
-    AgGridModule
+    AgGridModule,
+    ChartsModule
   ]
 })
 export class MainPageModule {}
