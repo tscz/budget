@@ -9,7 +9,7 @@ import {
   NbMenuModule
 } from "@nebular/theme";
 import { MainPageComponent } from "./main-page.component";
-import { MainMenuComponent } from "../main-menu/main-menu.component";
+import { AgGridModule } from "ag-grid-angular";
 
 @NgModule({
   declarations: [MainPageComponent],
@@ -19,7 +19,8 @@ import { MainMenuComponent } from "../main-menu/main-menu.component";
     NbSidebarModule,
     NbButtonModule,
     NbIconModule,
-    NbCardModule
+    NbCardModule,
+    AgGridModule
   ]
 })
 export class MainPageModule {}

@@ -14,6 +14,7 @@ import {
 import { MainPageModule } from "./main-page/main-page.module";
 import { NbEvaIconsModule } from "@nebular/eva-icons";
 import { MainMenuComponent } from "./main-menu/main-menu.component";
+import { AgGridModule } from "ag-grid-angular";
 
 @NgModule({
   declarations: [AppComponent, MainMenuComponent],
@@ -27,7 +28,8 @@ import { MainMenuComponent } from "./main-menu/main-menu.component";
     NbButtonModule,
     NbEvaIconsModule,
     NbMenuModule.forRoot(),
-    NbCardModule
+    NbCardModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
